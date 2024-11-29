@@ -25,7 +25,7 @@ from django.db import models
 from django.contrib import admin
 
 class Book(models.Model):
-    book_no = models.CharField(max_length=100)
+    book_no = models.CharField(max_length=100, primary_key=True)
     book_name = models.CharField(max_length=100)
     name = models.CharField(max_length=100)
     mobile_no = models.CharField(max_length=15)

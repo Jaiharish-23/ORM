@@ -4,6 +4,9 @@
 To develop a Django application to store and retrieve data from a bank loan database using Object Relational Mapping(ORM).
 
 # ENTITY RELATIONSHIP DIAGRAM
+![{F1018B2F-8DAB-4608-9C8B-CCABCA8B89A0}](https://github.com/user-attachments/assets/964a46f9-d25b-4802-a623-6ac4519ffb4d)
+
+
 ## DESIGN STEPS
 ## STEP 1:
 Clone the problem from GitHub
@@ -18,9 +21,9 @@ Enter the code for admin.py and models.py
 Execute Django admin and create details for 10 books
 
 # PROGRAM
-```
-1.models.py
 
+1.models.py
+```
 from django.db import models
 from django.contrib import admin
 
@@ -32,12 +35,14 @@ class Book(models.Model):
     email = models.EmailField()
     aadhar_no = models.CharField(max_length=12)
     address = models.CharField(max_length=255)
+    Institute_name=models.CharField(max_length=100)
 
 class BookAdmin(admin.ModelAdmin):
-    list_display = ('book_no', 'book_name', 'name', 'mobile_no', 'email','aadhar_no','address')
+    list_display = ('book_no', 'book_name', 'name', 'mobile_no', 'email','aadhar_no','address','Institute_name')
 
+```
 2.admin.py
-
+```
 from django.contrib import admin
 from .models import Book, BookAdmin
 admin.site.register(Book, BookAdmin)
@@ -45,15 +50,11 @@ admin.site.register(Book, BookAdmin)
 ```
 # OUTPUT
 Include the screenshot of your admin page.
-![Screenshot (163)](https://github.com/user-attachments/assets/3b5d7f08-4780-4707-b2e6-db45647e4eda)
-
-![Screenshot (164)](https://github.com/user-attachments/assets/9aca72ba-771d-47a5-96c8-4d341c6373cf)
-
-![{63442756-6273-4EAE-A324-BF731A1B10FE}](https://github.com/user-attachments/assets/f9463c1d-6de8-42fc-8066-d380750beb74)
-
-![{6B5672F7-4C1E-4796-BF4D-467ECA1A1902}](https://github.com/user-attachments/assets/f9844b1f-613c-4577-91b8-45d734604437)
+![Screenshot (197)](https://github.com/user-attachments/assets/8a2dbe8c-679d-466c-a9a8-bc5d0608c56c)
 
 
+![Screenshot (198)](https://github.com/user-attachments/assets/c2d806d3-11dd-4607-a6c9-f82020e8c572)
+![{4A47FDCF-0BB0-44F5-A4C7-D82879DE80A7}](https://github.com/user-attachments/assets/e91b6e18-64ca-4747-8559-c46a8c630407)
 
 
 # RESULT

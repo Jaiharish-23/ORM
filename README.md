@@ -49,9 +49,10 @@ Include the screenshot of your admin page.
 
 ![Screenshot (164)](https://github.com/user-attachments/assets/9aca72ba-771d-47a5-96c8-4d341c6373cf)
 
-
+![{63442756-6273-4EAE-A324-BF731A1B10FE}](https://github.com/user-attachments/assets/f9463c1d-6de8-42fc-8066-d380750beb74)
 
 ![{6B5672F7-4C1E-4796-BF4D-467ECA1A1902}](https://github.com/user-attachments/assets/f9844b1f-613c-4577-91b8-45d734604437)
+
 
 
 
